@@ -1,0 +1,172 @@
+[
+    {
+      "model": "zoo_app.animal",
+      "pk": 1,
+      "fields": {
+        "name": "Lion",
+        "species": "mammal",
+        "age": 5,
+        "date_added": "2022-01-01",
+        "price": "100.00"
+      }
+    },
+    {
+      "model": "zoo_app.animal",
+      "pk": 2,
+      "fields": {
+        "name": "Elephant",
+        "species": "mammal",
+        "age": 10,
+        "date_added": "2022-02-01",
+        "price": "200.00"
+      }
+    },
+   
+    {
+      "model": "zoo_app.food",
+      "pk": 1,
+      "fields": {
+        "name": "Meat",
+        "producer": "Carnivore Farms",
+        "description": "High-quality meat for carnivorous animals."
+      }
+    },
+    {
+      "model": "zoo_app.food",
+      "pk": 2,
+      "fields": {
+        "name": "Seeds",
+        "producer": "Avian Supply Co.",
+        "description": "Nutritious seeds for birds."
+      }
+    },
+    {
+      "model": "zoo_app.positions",
+      "pk": 1,
+      "fields": {
+        "name": "Zookeeper",
+        "salary": "5000.00"
+      }
+    },
+    {
+      "model": "zoo_app.positions",
+      "pk": 2,
+      "fields": {
+        "name": "Trainer",
+        "salary": "6000.00"
+      }
+    },
+    {
+      "model": "zoo_app.animalhabitat",
+      "pk": 1,
+      "fields": {
+        "name": "Savannah"
+      }
+    },
+    {
+      "model": "zoo_app.animalhabitat",
+      "pk": 2,
+      "fields": {
+        "name": "Rainforest"
+      }
+    },
+    {
+      "model": "zoo_app.ticket",
+      "pk": 1,
+      "fields": {
+        "name": "Adult",
+        "price": "20.00",
+        "entry_date": "2022-01-01",
+        "exit_date": "2022-01-02"
+      }
+    },
+    {
+      "model": "zoo_app.ticket",
+      "pk": 2,
+      "fields": {
+        "name": "Child",
+        "price": "10.00",
+        "entry_date": "2022-01-01",
+        "exit_date": "2022-01-02"
+      }
+    },
+    {
+      "model": "zoo_app.visitor",
+      "pk": 1,
+      "fields": {
+        "name": "John Smith",
+        "age": 35,
+        "ticket_type": 1
+      }
+    },
+    {
+      "model": "zoo_app.visitor",
+      "pk": 2,
+      "fields": {
+        "name": "Emma Johnson",
+        "age": 10,
+        "ticket_type": 2
+      }
+    },
+    {
+      "model": "zoo_app.exhibit",
+      "pk": 1,
+      "fields": {
+        "name": "Lion Enclosure",
+        "location": 1,
+        "capacity": 5,
+        "start": "2022-01-01T10:00:00Z",
+        "end": "2022-01-01T16:00:00Z"
+      }
+    },
+    {
+      "model": "zoo_app.exhibit",
+      "pk": 2,
+      "fields": {
+        "name": "Bird Aviary",
+        "location": 2,
+        "capacity": 10,
+        "start": "2022-01-01T11:00:00Z",
+        "end": "2022-01-01T17:00:00Z"
+      }
+    },
+    {
+      "model": "zoo_app.feedingschedule",
+      "pk": 1,
+      "fields": {
+        "animal": 1,
+        "time": "12:00:00",
+        "food": 1,
+        "quantity": 2
+      }
+    },
+    {
+      "model": "zoo_app.feedingschedule",
+      "pk": 2,
+      "fields": {
+        "animal": 2,
+        "time": "14:00:00",
+        "food": 2,
+        "quantity": 3
+      }
+    },
+    {
+      "model": "zoo_app.employee",
+      "pk": 1,
+      "fields": {
+        "name": "Michael Johnson",
+        "position": 1,
+        "salary": "5000.00"
+      }
+    },
+    {
+      "model": "zoo_app.employee",
+      "pk": 2,
+      "fields": {
+        "name": "Sarah Anderson",
+        "position": 2,
+        "salary": "6000.00"
+      }
+    }
+  ]
+  

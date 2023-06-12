@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block title %}
+Home Zoo
+{% endblock %}
+
+
+{% block content %} 
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'devil.jpg' %}" class="d-block w-100 object-fit-cover" style="max-height: 600px;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'bird.jpg' %}" class="d-block w-100 object-fit-cover" style="max-height: 600px;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'mc.jpg' %}" class="d-block w-100 object-fit-cover" style="max-height: 600px;" alt="...">
+    </div>
+  </div>
+</div>
+
+{% endblock %}
