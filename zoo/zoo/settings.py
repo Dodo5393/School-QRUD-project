@@ -1,3 +1,4 @@
+import os
 """
 Django settings for zoo project.
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'zoo_app',
     'bootstrap5',
+    'django_tables2',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +125,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+

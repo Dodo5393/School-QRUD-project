@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Food List</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Producer</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for food in foods %}
+    <tr>
+      <td>{{ food.name }}</td>
+      <td>{{ food.producer }}</td>
+      <td>{{ food.description }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

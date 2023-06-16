@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Positions List</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for position in positions %}
+    <tr>
+      <td>{{ position.name }}</td>
+      <td>${{ position.salary }} USD/month</td>
+      <td><a href="{% url 'job_application' position_id=position.id %}">Apply Now</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

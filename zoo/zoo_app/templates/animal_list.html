@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Animal List</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Species</th>
+      <th>Age</th>
+      <th>Date Added</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for animal in animals %}
+    <tr>
+      <td>{{ animal.name }}</td>
+      <td>{{ animal.species }}</td>
+      <td>{{ animal.age }}</td>
+      <td>{{ animal.date_added }}</td>
+      <td>${{ animal.price }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

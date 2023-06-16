@@ -20,6 +20,8 @@ class Animal(models.Model):
     age = models.IntegerField(validators=[MinValueValidator(0)])
     date_added = models.DateField()
     price = models.DecimalField(max_digits=8, decimal_places=2, validators=[MinValueValidator(0.01)])
+    image = models.ImageField(upload_to='animal_images')  
+    description = models.TextField()  
 
 
     def __str__(self):
@@ -94,6 +96,16 @@ class Employee(models.Model):
     name = models.CharField(max_length=100)
     position = models.ForeignKey(Positions, on_delete=models.CASCADE)
     salary = models.DecimalField(max_digits=8, decimal_places=2, validators=[MinValueValidator(0.01)])
+    def __str__(self):
+        return self.name
+
+class JobApplication(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    cover_letter = models.TextField()
+    position = models.ForeignKey(Positions, on_delete=models.CASCADE)
+    resume = models.FileField(upload_to='resumes/')
+
     def __str__(self):
         return self.name
 

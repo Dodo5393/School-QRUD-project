@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Animal,Exhibit,Visitor,Employee,FeedingSchedule,Food,Positions,AnimalHabitat,Ticket
+from .models import Animal,Exhibit,Visitor,Employee,FeedingSchedule,Food,Positions,AnimalHabitat,Ticket,JobApplication
 from django.urls import reverse
 from django.utils.html import format_html
 # Register your models here.
@@ -112,3 +112,4 @@ admin.site.register(Visitor, VisitorAdmin)
 admin.site.register(Exhibit, ExhibitAdmin)
 admin.site.register(FeedingSchedule, FeedingScheduleAdmin)
 admin.site.register(Employee, EmployeeAdmin)
+admin.site.register(JobApplication)

@@ -16,10 +16,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from zoo_app.views import home, about
+from zoo_app.views import home, about, animal_list, food_list,positions_list,search_results,job_application
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
-     path('about/', about, name='about'),
+    path('about/', about, name='about'),
+    path('animal_list/', animal_list, name='animal_list'),
+    path('food_list/', food_list, name='food_list'),
+    path('positions_list/', positions_list, name='positions_list'),
+    path('search_results/', search_results, name='search_results'),
+    path('job_application/<int:position_id>/', job_application, name='job_application'),
+    
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

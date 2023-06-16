@@ -1,28 +1,32 @@
 [
-    {
-      "model": "zoo_app.animal",
-      "pk": 1,
-      "fields": {
-        "name": "Lion",
-        "species": "mammal",
-        "age": 5,
-        "date_added": "2022-01-01",
-        "price": "100.00"
-      }
-    },
-    {
-      "model": "zoo_app.animal",
-      "pk": 2,
-      "fields": {
-        "name": "Elephant",
-        "species": "mammal",
-        "age": 10,
-        "date_added": "2022-02-01",
-        "price": "200.00"
-      }
-    },
+  {
+    "model": "zoo_app.animal",
+    "pk": 1,
+    "fields": {
+      "name": "Lion",
+      "species": "mammal",
+      "age": 5,
+      "date_added": "2022-01-01",
+      "price": "100.00",
+      "image": "animal_images/lion.jpg",
+      "description": "The lion (Panthera leo) is a majestic mammal native to Africa. It has a golden-brown fur and a distinctive mane, which is unique to male lions. Lions are known for their strength and power. They are top predators in their habitat and primarily hunt larger mammals. Lions live in social groups called prides and are often associated with courage and bravery."
+    }
+  },
+  {
+    "model": "zoo_app.animal",
+    "pk": 2,
+    "fields": {
+      "name": "Elephant",
+      "species": "mammal",
+      "age": 10,
+      "date_added": "2022-02-01",
+      "price": "200.00",
+      "image": "animal_images/zlon.jpg",
+      "description": "The elephant (Elephantidae) is a large mammal found in Africa and Asia. It is characterized by its massive size, long trunk, and tusks. Elephants are herbivores, feeding on vegetation such as grass, leaves, and fruits. They are highly social animals and live in herds led by a matriarch. Elephants are known for their intelligence and emotional capacity. They are symbols of wisdom and strength, playing a vital role in their ecosystems."
+    }
+  },
    
-    {
+  {
       "model": "zoo_app.food",
       "pk": 1,
       "fields": {
