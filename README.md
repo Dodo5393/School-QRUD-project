@@ -1,2 +1,2 @@
 # zoo projekt 
- crud site in django 
+Projekt QRUD Django to prosta strona internetowa, która umożliwia użytkownikom wykonywanie podstawowych operacji CRUD na danych. 
